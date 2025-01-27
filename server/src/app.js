@@ -8,9 +8,6 @@ const port = 3000;
 const app = express();
 app.use(cors());
 
-app.post('/api/auth', auth);
-app.get('/api/login', login);
-
 
 /** GET endpoint for sending back a Hello World message */
 app.get('/hello', (req, res) => {
