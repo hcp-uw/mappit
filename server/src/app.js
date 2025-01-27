@@ -29,10 +29,7 @@ app.post('/api/auth', (req, res) => {
       res.status(200).send("Successful account creation");
     })
     .catch((error) => {
-      res.status(400).send("Invalid email provided");
+      res.status(400).send({code: error.code, message: error.message});
     });
 });
 
-app.post('/api/login', (req, res) => {
-
-});
