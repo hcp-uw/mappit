@@ -22,7 +22,7 @@ app.listen(port, () => {
 
 app.post('/api/auth', (req, res) => {
   const auth = AUTH;
-  createUserWithEmailAndPassword(auth, req.email, req.password)
+  createUserWithEmailAndPassword(auth, req.query.email, req.query.password)
     .then((userCredential) => {
       const user = userCredential.user;
       // would put in a function to retrieve users data on success
@@ -31,5 +31,8 @@ app.post('/api/auth', (req, res) => {
     .catch((error) => {
       res.status(400).send("Invalid email provided");
     });
+});
+
+app.post('/api/login', (req, res) => {
 
 });
