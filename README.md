@@ -1,24 +1,50 @@
-# React Native + Node Template
-Created by Rasmus Makiniemi, curated by the Tech Team
+# Welcome to your Expo app 👋
 
-## Background
-React Native is an open-source JavaScript framework that allows you to build mobile apps using the same codebase, enabling you to write code once and deploy it across different platforms, such as iOS, Android, and Windows.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-React Native is one of the leading mobile development frameworks, and is used by countless companies which you can find out more [about here](https://reactnative.dev/showcase).
+## Get started
 
-## The Template
-This template uses Expo to seemlessly bridge the gap between developing on a computer to displaying on a mobile device. With the use of the Expo Go app on your phone and a simple one line command in your terminal, Expo generates a QR code for you to scan in the app to open your project on a phone.
+1. Install dependencies
 
-As Expo automatically sends updates to the app on your phone, you can continuously keep coding and see the updates in real-time.
+   ```bash
+   npm install
+   ```
 
-## Getting Started
-For this project, you need two things installed, Expo Go on your phone and Node.js on your computer which you can find the downloads to here:
+2. Start the app
 
-- [Expo Go](https://expo.dev/client)
-- [Node.js](https://nodejs.org/en/download)
+   ```bash
+    npx expo start
+   ```
 
-Once you are done with that, start following the steps listed in the README's in the `client` and `server` folders to set up and run the front-end and backend respectively.
+In the output, you'll find options to open the app in a
 
-Happy coding!
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-*PS: This template is far from perfect, so if you find anything wrong, have any questions, or run into any steps you do not understand, reach out to the tech team!*
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
+```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
