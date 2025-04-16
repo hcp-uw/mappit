@@ -47,8 +47,8 @@ export default function Index() {
               style={styles.inputControl} 
               placeholder="**********"
               placeholderTextColor="#6b7280"
-              onChangeText={email => setForm({...form, email})} 
-              value={form.email}
+              onChangeText={password => setForm({...form, password})} 
+              value={form.password}
             />
           </View>
 
