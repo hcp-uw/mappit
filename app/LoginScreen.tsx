@@ -2,14 +2,18 @@ import React from "react";
 import { View, TextInput, StyleSheet, Image, Text, TouchableOpacity } from "react-native";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { useNavigation } from '@react-navigation/native';
 
 
 
-export default function Index() {
+const LoginScreen = () => {
   const [form, setForm] = useState({
     email: '',
     password: ''
   });  
+
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={{flex:1, backgroundColor: '#e8ecf4'}}>
       <View style={styles.container}>
@@ -54,9 +58,9 @@ export default function Index() {
 
           <View style={styles.formAction} >
             <TouchableOpacity 
-              onPress={() => {
-                alert('Signed in');
-              }}>
+              onPress={() => 
+                alert('Login Complete')
+              }>
               <View style={styles.btn}>
                 <Text style={styles.btnText}>Sign In</Text>
               </View>
@@ -77,6 +81,8 @@ export default function Index() {
     </SafeAreaView>
     );
   }
+
+export default LoginScreen;
 
 const styles = StyleSheet.create({
   container: {
