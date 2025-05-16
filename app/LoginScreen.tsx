@@ -2,8 +2,7 @@ import React from "react";
 import { View, TextInput, StyleSheet, Image, Text, TouchableOpacity } from "react-native";
 import { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useNavigation } from '@react-navigation/native';
-
+import { useRouter } from 'expo-router';
 
 
 const LoginScreen = () => {
@@ -12,7 +11,8 @@ const LoginScreen = () => {
     password: ''
   });  
 
-  const navigation = useNavigation();
+  const router = useRouter();
+
 
   return (
     <SafeAreaView style={{flex:1, backgroundColor: '#e8ecf4'}}>
@@ -59,7 +59,7 @@ const LoginScreen = () => {
           <View style={styles.formAction} >
             <TouchableOpacity 
               onPress={() => 
-                alert('Login Complete')
+                router.replace('/HomeScreen')
               }>
               <View style={styles.btn}>
                 <Text style={styles.btnText}>Sign In</Text>
