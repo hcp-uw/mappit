@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import { StyleSheet, View } from "react-native";
 import Mapbox, {MapView, Camera} from "@rnmapbox/maps";
+import 'dotenv/config';
 
+require('dotenv').config();
 
-Mapbox.setAccessToken("sk.eyJ1Ijoic2Vhbmx1dSIsImEiOiJjbWF4MHE1a2kwbDN2Mm5vaXhreHE3Y2R2In0.Z1IhV2SDnwGdU1FR0v4qwg");
+Mapbox.setAccessToken(process.env.MAPBOX_ACCESS_TOKEN? process.env.MAPBOX_ACCESS_TOKEN : null);
 
 const styles = StyleSheet.create({
     page: {

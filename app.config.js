@@ -1,3 +1,5 @@
+import 'dotenv/config';
+
 export default {
   name: "mappit",
   slug: "mappit",
@@ -37,14 +39,15 @@ export default {
       "@rnmapbox/maps",
       {
         RNMapboxMapsImpl: "mapbox",
-        accessToken: "pk.eyJ1Ijoic2Vhbmx1dSIsImEiOiJjbTd2MjB5bWowNzV5MmpuNGptbTNocjdnIn0.dNhHkY6L8_EC1VAmK-obaw"
+        accessToken: process.env.MAPBOX_ACCESS_TOKEN,
       }
-    ]
+    ],
+    "react-native-dotenv"
   ],
   experiments: {
     typedRoutes: true
   },
   extra: {
-    mapboxAccessToken: "YOUR_MAPBOX_ACCESS_TOKEN"
+    mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
   }
 };
