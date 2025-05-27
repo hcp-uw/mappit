@@ -14,6 +14,7 @@ export default {
     bundleIdentifier: "com.anonymous.mappit"
   },
   android: {
+    package: "com.anonymous.mappit",
     adaptiveIcon: {
       foregroundImage: "./assets/images/adaptive-icon.png",
       backgroundColor: "#ffffff"
@@ -39,15 +40,14 @@ export default {
       "@rnmapbox/maps",
       {
         RNMapboxMapsImpl: "mapbox",
-        accessToken: process.env.MAPBOX_ACCESS_TOKEN,
+        accessToken: process.env.MAPBOX_TOKEN,
       }
     ],
-    "react-native-dotenv"
   ],
   experiments: {
     typedRoutes: true
   },
   extra: {
-    mapboxAccessToken: process.env.MAPBOX_ACCESS_TOKEN,
+    mapboxAccessToken: process.env.MAPBOX_TOKEN,
   }
 };

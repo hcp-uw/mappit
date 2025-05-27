@@ -1,7 +1,0 @@
-** BUILD FAILED **
-
-
-The following build commands failed:
-	PhaseScriptExecution [CP-User]\ Generate\ app.config\ for\ prebuilt\ Constants.manifest /Users/wesleyli/Library/Developer/Xcode/DerivedData/mappit-ezbzhngkcfhnrwfulydnwkdihria/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/EXConstants.build/Script-46EB2E00027910.sh (in target 'EXConstants' from project 'Pods')
-	Building workspace mappit with scheme mappit and configuration Debug
-(2 failures)
